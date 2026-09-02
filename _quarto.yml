@@ -10,4 +10,4 @@ website:
 
 format:
   html:
-    theme: sketchy
+    theme: simplex
