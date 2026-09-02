@@ -44,7 +44,7 @@ jobs:
       - name: Renderizar sitio
         run: quarto render
         env:
-          RETICULATE_PYTHON: /usr/bin/python3
+          RETICULATE_PYTHON: ${{ env.pythonLocation }}/bin/python3
 
       - name: Subir artefacto para Pages
         uses: actions/upload-pages-artifact@v3
