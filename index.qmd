@@ -1,0 +1,37 @@
+---
+title: "Este es mi fabuloso reporte"
+---
+
+## Chunk de R
+
+```{r}
+library(dplyr)
+library(reticulate)
+```
+
+```{r}
+mtcars |> head()
+```
+
+## Chunk de Python
+
+```{python}
+import pandas as pd
+```
+
+```{python}
+import pandas as pd
+df = pd.DataFrame({"x": [1, 2, 3], "y": [4, 5, 6]})
+df.describe()
+```
+
+## Pasando datos de R a Python (opcional)
+
+```{r}
+mi_vector <- c(1, 2, 3, 4, 5)
+```
+
+```{python}
+# Accede al objeto de R desde Python
+print(r.mi_vector)
+```
